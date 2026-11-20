@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /privacy.html
+Allow: /wise-dragons/privacy.html
+Disallow: /
