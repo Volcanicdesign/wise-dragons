@@ -17,3 +17,15 @@ nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:28px 0 0}
 nav a{display:inline-block;padding:12px 20px;border:1px solid var(--border);border-radius:999px;text-decoration:none;min-height:48px}
 ul{padding-left:1.2em}
 footer{margin-top:48px;text-align:center;font-size:14px;color:var(--text-2)}
+html.wd-hold{visibility:hidden !important}
+.gate{min-height:100vh;max-width:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 20px 64px}
+.gate img{width:148px;height:148px;border-radius:36px;border:1px solid var(--border);box-shadow:0 24px 80px rgba(0,0,0,.55),0 0 0 10px rgba(212,175,95,.06)}
+.gate .label{margin:28px 0 0}
+.gate h1{font-size:clamp(40px,8vw,58px);margin:12px 0 8px}
+.gate form{width:min(100%,340px);margin-top:22px}
+.gate input{width:100%;background:rgba(22,30,60,.72);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:16px 22px;font:inherit;text-align:center;outline:none;min-height:52px}
+.gate input::placeholder{color:var(--text-2);opacity:1}
+.gate input:focus{border-color:var(--gold-bright);box-shadow:0 0 0 4px rgba(212,175,95,.16)}
+.gate button{margin-top:14px;background:transparent;color:var(--gold-bright);border:1px solid var(--border);border-radius:999px;padding:12px 28px;font:inherit;min-height:48px;cursor:pointer}
+.gate button:hover,.gate button:focus-visible{border-color:var(--gold-bright)}
+.gate-note{margin:16px 0 0;color:var(--text-2)}

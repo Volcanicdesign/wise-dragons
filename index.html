@@ -1,7 +1,21 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en" class="wd-hold"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>The Wise Dragons</title><meta name="description" content="Cards and calm games for big feelings and small brave steps.">
-<link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css"></head>
+<link rel="icon" href="icon.png">
+<style>html.wd-hold{visibility:hidden !important}</style>
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  var open=false;
+  try{open=localStorage.getItem('wd_preview_ok')==='1';}catch(e){}
+  if(open){document.documentElement.classList.remove('wd-hold');return;}
+  var file=location.pathname.split('/').pop();
+  if(!file||file.indexOf('.')===-1)file='index.html';
+  location.replace('gate.html?next='+encodeURIComponent(file));
+})();
+</script>
+</head>
 <body><main>
 <div class="hero"><img src="icon.png" alt="The Wise Dragons app icon">
 <div class="label" style="margin-top:22px">Welcome to</div><h1>The Wise Dragons</h1>
